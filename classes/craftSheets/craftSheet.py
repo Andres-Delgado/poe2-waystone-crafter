@@ -1,4 +1,4 @@
-from classes.distillSheet import DistillSheet
+from classes.craftSheets.distillSheet import DistillSheet
 
 class CraftSheet:
   def __init__(self):

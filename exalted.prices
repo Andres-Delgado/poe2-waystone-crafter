@@ -1,0 +1,21 @@
+# Prices table for Exalted Orbs
+#   ex. [currencyName], [value], [per exalted]
+
+Alchemy, 2.75, 1
+Augmentation, 226, 1
+Regal, 14, 1
+Vaal, 3.5, 1
+Exalted, 1, 1
+
+Ire, 3, 1
+Guilt, 1, 1
+Greed, 1, 1
+Paranoia 1, 3.5
+Envy, 1, 1
+Disgust, 1, 3.36
+Despair, 1, 6.5
+Fear, 1, 20
+Suffering, 1, 62.56
+Isolation, 1, 195
+
+# TODO: add omens

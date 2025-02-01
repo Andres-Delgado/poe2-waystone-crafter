@@ -1,5 +1,5 @@
-from classes.priceTable import PriceTable
-from classes.craftSheet import CraftSheet
+from classes.priceTables.priceTable import PriceTable
+from classes.craftSheets.craftSheet import CraftSheet
 
 def getExaltedPriceTable() -> PriceTable:
   priceTable = {}

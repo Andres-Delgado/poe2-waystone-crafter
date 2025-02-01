@@ -1,0 +1,19 @@
+# number of waystones to craft
+100
+
+# number of each rarity
+Normal, 17
+Magic, 53
+Rare, 30
+
+# number of distilled emotions to use
+Ire, 40
+Guilt, 40
+Greed, 20
+Paranoia,
+Envy,
+Disgust,
+Despair,
+Fear,
+Suffering,
+Isolation,

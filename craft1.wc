@@ -1,15 +1,30 @@
-# number of waystones to craft
-Waystones, 100
+##############################
+# Waystones, number to craft #
+##############################
+Waystones, 97
 
-# number of each rarity
+
+# Rarity, Number of each 
 Normal, 17
 Magic, 53
 Rare, 30
 
-# number of distilled emotions to use
-Ire, 40
-Guilt, 40
-Greed, 20
+##############
+# Currencies #
+##############
+# name, total needed, total aquired
+
+Alchemy, 17, 17
+Augmentation, 25, 25
+Regal, 53, 53
+Vaal, 97, 65
+
+######################
+# Distilled Emotions #
+######################
+Ire, 40, 0
+Guilt, 40, 10
+Greed, 20, 4
 Paranoia, 
 Envy, 
 Disgust, 

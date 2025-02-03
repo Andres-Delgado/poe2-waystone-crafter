@@ -13,7 +13,7 @@ def getExaltedPriceTable() -> PriceTable:
 
   return PriceTable(priceTable)
 
-def getCraftSheet(sheetName: str) -> CraftSheet:
+def getCraftSheet(sheetName: str, priceTable: PriceTable) -> CraftSheet:
   itemDict = {}
 
   with open(sheetName + ".wc", "r") as file:
@@ -22,14 +22,16 @@ def getCraftSheet(sheetName: str) -> CraftSheet:
     for itemStr in itemList:
       item = itemStr.split(',')
 
-      if len(item[1]):
+      if len(item) == 2 and len(item[1]):
         itemDict[item[0]] = int(item[1])
 
-  return CraftSheet(itemDict)
+      elif len(item) == 3:
+        itemDict[item[0]] = (int(item[1]), int(item[2]))
+
+  return CraftSheet(itemDict, priceTable, True)
 
 if __name__ == '__main__':
   exPriceTable = getExaltedPriceTable()
-  exPriceTable.prettyPrint()
+  exPriceTable.print()
 
-  craftSheet = getCraftSheet("craft1")
-  craftSheet.prettyPrint()
+  craftSheet = getCraftSheet("craft1", exPriceTable)

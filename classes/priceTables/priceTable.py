@@ -1,7 +1,7 @@
 from classes.items.Item import Item
 
 class PriceTable:
-  def __init__(self, ptDict: dict):
+  def __init__(self, ptDict: dict, debug: bool = False):
     self.Alchemy = Item('Alchemy', ptDict['Alchemy'])
     self.Augmentation = Item('Augmentation', ptDict['Augmentation'])
     self.Regal = Item('Regal', ptDict['Regal'])
@@ -18,6 +18,9 @@ class PriceTable:
     self.Fear = Item('Fear', ptDict['Fear'])
     self.Suffering = Item('Suffering', ptDict['Suffering'])
     self.Isolation = Item('Isolation', ptDict['Isolation'])
+
+    if debug:
+      self.print()
 
   def print(self):
     for _,  value in vars(self).items():

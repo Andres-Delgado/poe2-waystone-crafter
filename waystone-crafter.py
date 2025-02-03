@@ -4,7 +4,7 @@ from classes.craftSheets.craftSheet import CraftSheet
 def getExaltedPriceTable() -> PriceTable:
   priceTable = {}
 
-  with open("exalted.csv", "r") as file:
+  with open("exalted-old.csv", "r") as file:
     currencyList = [str(line).strip() for line in file if not line.startswith("#") and len(str(line).strip()) > 0]
 
     for c in currencyList:
@@ -32,6 +32,5 @@ def getCraftSheet(sheetName: str, priceTable: PriceTable) -> CraftSheet:
 
 if __name__ == '__main__':
   exPriceTable = getExaltedPriceTable()
-  exPriceTable.print()
 
   craftSheet = getCraftSheet("craft1", exPriceTable)
